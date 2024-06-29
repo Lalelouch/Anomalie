@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- impostazioni base e inclusione file principali -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="microsito.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Librerie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"></script>
+
+    <!-- informazioni minime per i motori di ricerca -->
+    <title>Anomalie</title>
+    <meta
+      name="description"
+      content="An audio-visualization that blends minimalism and glitch in a simulated interface, reflecting the chaotic, essential, and reduced approach of musical composition."
+    />
+    <!-- informazioni minime per la condivisione sui social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anomalie: between order and chaos" />
+    <meta
+      property="og:description"
+      content="An audio-visualization that blends minimalism and glitch in a simulated interface, reflecting the chaotic, essential, and reduced approach of musical composition."
+    />
+    <meta
+      property="og:url"
+      content="https://editor.p5js.org/larabellatalla/sketches/22WPjTpi6"
+    />
+    <meta
+      property="og:image"
+      content="https://preview.p5js.org/larabellatalla/sketches/22WPjTpi6/preview.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <!-- informazioni visualizzate al clic sul pulsante (?) -->
+    <div id="pannello-info">
+      <article>
+        <h1 class="rubik-glitch-regular">ANOMALIE</h1>
+        <p>Lara Bellatalla, Giorgia Bettineschi, Diletta D'Alto</p>
+        <hr />
+        <p>
+          An interaction between order and chaos, minimalist harmony dances with
+          the glitch, revealing the anomaly in order.
+        </p>
+        <p>
+          An audio-visualization that blends minimalism and glitch in a
+          simulated interface, reflecting the chaotic, essential, and reduced
+          approach of musical composition.
+        </p>
+        <p>
+          Click "play/stop" to start and stop the video, move the bar to raise
+          or lower the volume, move the timeline bar to go forward or backward.
+        </p>
+        <hr />
+        <p>
+          Music: "UNIEQAV #02 UNI MIA" by
+          <a href="https://alvanoto.com/" target="_blank">ALVA NOTO</a>
+        </p>
+      </article>
+    </div>
+    <!-- pulsanti audio e informazioni -->
+    <button id="pulsante-audio" onclick="attivaDisattivaAudio()">
+      <span class="lnr lnr-volume-high"></span>
+    </button>
+    <button id="pulsante-info" onclick="apriChiudiInfo()">
+      <span class="lnr lnr-question-circle"></span>
+    </button>
+
+    <!-- inclusione altri script e sketch.js -->
+    <script src="microsito.js"></script>
+
+    <!-- Classi -->
+    <script src="./utility/class.Position.js"></script>
+    <script src="./utility/class.FrameGlitch.js"></script>
+    <script src="./utility/class.TitleGlitch.js"></script>
+
+    <script src="./utility/class.LineaPunti.js"></script>
+    <script src="./utility/class.MultiLineaPunti.js"></script>
+    <script src="./utility/class.MultiLineeGlitch.js"></script>
+    <script src="./utility/class.Graffio.js"></script>
+
+    <script src="./utility/class.SineWave.js"></script>
+    <script src="./utility/class.TimeSlider.js"></script>
+    <script src="./utility/class.Mixer.js"></script>
+    <script src="./utility/class.PlayButton.js"></script>
+    <script src="./utility/class.VolumeSlider.js"></script>
+    <script src="./utility/class.Rotellone.js"></script>
+    <script src="./utility/class.PistolaGrossa.js"></script>
+    <script src="./utility/class.Scossa.js"></script>
+    <script src="./utility/class.Campana.js"></script>
+
+    <script src="./utility/class.Cursor.js"></script>
+    <script src="./utility/function.Animation.js"></script>
+
+    <!-- Sketch -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
